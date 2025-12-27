@@ -87,6 +87,14 @@ Telegram: https://t.me/cyberdudechannel
 
 [Anbuselvan](https://www.facebook.com/anburocky3)
 
+### 👥 Contributors:
+
+- **Anbuselvan (anburocky3)** — Creator & maintainer — https://github.com/anburocky3
+- **Manoj (ManoMedEngg)** — contributed to develope structured site — https://manomedengg.github.io/Profilo
+- **github-actions[bot]** — automated CI & maintenance tasks
+
+Contributions welcome! Open an issue or submit a pull request.
+
 ### ⚖️ License:
 
 [MIT License](./LICENSE.md)
