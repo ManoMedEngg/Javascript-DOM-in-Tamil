@@ -1,13 +1,219 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>JS DOM in Tamil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM in Tamil - தமிழில்</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <h1>We are going to Learn HTML DOM in Javascript</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fab fa-js-square"></i>
+                <span>JS DOM Tamil</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-    <script src=".//assets/js/main.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Javascript DOM</span>
+                    <span class="tamil-text">in Tamil (தமிழில்)</span>
+                </h1>
+                <p class="hero-subtitle">Learn to build dynamic interactive web apps using HTML DOM & Javascript programming language - All in Tamil! 😊👍</p>
+                
+                <div class="badge-container">
+                    <img src="https://img.shields.io/github/license/anburocky3/Javascript-DOM-in-Tamil" alt="License">
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#lessons" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Start Learning
+                    </a>
+                    <a href="https://github.com/anburocky3/Javascript-DOM-in-Tamil" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="code-comment">// Learn JavaScript DOM</span>
+<span class="code-keyword">const</span> elements = document.<span class="code-method">querySelectorAll</span>(<span class="code-string">'.item'</span>);
+
+elements.<span class="code-method">forEach</span>(el => {
+  el.<span class="code-method">addEventListener</span>(<span class="code-string">'click'</span>, () => {
+    console.<span class="code-method">log</span>(<span class="code-string">'Clicked!'</span>);
+  });
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About This Course</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This comprehensive course teaches you how to manipulate the Document Object Model (DOM) using JavaScript, entirely in Tamil language. Perfect for Tamil-speaking developers who want to create dynamic, interactive websites.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Complete beginner to advanced coverage</li>
+                        <li><i class="fas fa-check"></i> Hands-on coding examples</li>
+                        <li><i class="fas fa-check"></i> Real-world projects</li>
+                        <li><i class="fas fa-check"></i> Tamil language instruction</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://raw.githubusercontent.com/anburocky3/Javascript-DOM-in-Tamil/main/supports/header.svg" alt="Course Header">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <h2 class="section-title">Course Lessons</h2>
+            
+            <!-- Search and Filter -->
+            <div class="lesson-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search lessons...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Lessons</button>
+                    <button class="filter-btn" data-filter="basics">Basics</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="forms">Forms</button>
+                </div>
+            </div>
+
+            <!-- Lessons Grid -->
+            <div class="lessons-grid" id="lessonsContainer">
+                <!-- Lessons will be dynamically loaded here -->
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i> Load More Lessons
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <p class="section-subtitle">Connect with fellow learners and stay updated</p>
+            
+            <div class="community-links">
+                <a href="https://www.facebook.com/groups/cyberdudetraining/" target="_blank" class="community-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook Group</h3>
+                    <p>Join discussions and ask questions</p>
+                </a>
+                <a href="https://bit.ly/cyberdudeDiscord" target="_blank" class="community-card">
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord Server</h3>
+                    <p>Real-time chat with community</p>
+                </a>
+                <a href="https://bit.ly/cyberdudeYT" target="_blank" class="community-card">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube Channel</h3>
+                    <p>Watch video tutorials</p>
+                </a>
+                <a href="https://t.me/cyberdudechannel" target="_blank" class="community-card">
+                    <i class="fab fa-telegram"></i>
+                    <h3>Telegram</h3>
+                    <p>Get instant updates</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="contact" class="instructor">
+        <div class="container">
+            <h2 class="section-title">Your Instructor</h2>
+            <div class="instructor-card">
+                <div class="instructor-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Anbuselvan Rocky</h3>
+                <p>Passionate educator and web developer</p>
+                <a href="https://www.facebook.com/anburocky3" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-facebook"></i> Connect on Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Javascript DOM in Tamil</h4>
+                    <p>Learn JavaScript DOM manipulation in Tamil language</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#lessons">Lessons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/anburocky3/Javascript-DOM-in-Tamil" target="_blank">GitHub</a></li>
+                        <li><a href="https://bit.ly/cyberdudeYT" target="_blank">YouTube</a></li>
+                        <li><a href="https://bit.ly/cyberdudeDiscord" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Javascript DOM in Tamil. Licensed under MIT License</p>
+                <br>
+                <p> Special contribution by <a href="https://manomedengg.github.io/Profilo" target="_blank">Manoj</a>
+                    <i class="fas fa-heart" style="color: red;"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
